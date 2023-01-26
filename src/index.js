@@ -5,17 +5,16 @@ btn.addEventListener("click",function(){
   const numeroTarjeta = document.getElementById("cardnumber").value;
   const resultado=validator.isValid(numeroTarjeta);
   if (resultado===true) {
-    const hola=validator.maskify(numeroTarjeta)
+    //limpia el input para dar la respuesta con mayor claridad. 
+    document.getElementById("cardnumber").value = "";
+    const numOculto=validator.maskify(numeroTarjeta)
     document.getElementById("result").innerHTML = (resultado);
-    document.getElementById("hiddenNumber").innerHTML = (hola);
+    document.getElementById("hiddenNumber").innerHTML = (numOculto);
   } else {
     document.getElementById("result").innerHTML = (resultado);
   }
 });
-// const hide = document.getElementById('cardnumber').value;
-// addEventListener('keyup', (function() {
-// const numOculto=validator.Maskify(numeroTarjeta);
-// numOcultofinal= numOculto.toString();
+
 
 
 
