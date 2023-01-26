@@ -46,7 +46,13 @@ const validator = {
     } else {
       return false
     }
-  }  
+  },
+  maskify(numeroTarjeta){
+    const fullNumber = numeroTarjeta;
+    const last4Digits = fullNumber.slice(-4);
+    const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
+    return maskedNumber
+  }
 }
 
 export default  validator;
