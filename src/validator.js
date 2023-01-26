@@ -50,7 +50,7 @@ const validator = {
   maskify(numeroTarjeta){
     const fullNumber = numeroTarjeta;
     const last4Digits = fullNumber.slice(-4);
-    const maskedNumber = last4Digits.padStart(fullNumber.length, '*');
+    const maskedNumber = last4Digits.padStart(fullNumber.length, '#');
     return maskedNumber
   }
 }
