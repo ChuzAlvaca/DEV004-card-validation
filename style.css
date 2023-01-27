@@ -1,0 +1,50 @@
+body {
+background-color:#FFF1E6;
+}
+footer {
+background-color: #FFF1E6;
+}
+#pageTop{
+background-color: #EDDCD2;
+padding: 1em;
+text-align: center;
+}
+h3{
+text-align: center;
+font-family: 'Libre Bodoni', serif;;
+color: #f08080;
+}
+h1{ 
+color: #cb997e;
+font-family:'Libre Bodoni', serif;;
+}
+input{
+background-color: #cb997e;
+border-radius: 4px;
+border-color:#cb997e;
+padding-right: 20em;
+}
+#info, #payBox {
+width: 100%;
+max-width: 1000px;
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: 'Raleway', sans-serif;;
+color: #774936;
+}
+#paybtn {
+border-color: #f08080;
+background-color: #f08080;
+font-family: 'Arvo', serif;;
+font-size: 1.2em;
+color: #774936;
+}
+#copyRight {
+color: #774936;
+text-align: center;
+margin-top: 6em;
+}
+
