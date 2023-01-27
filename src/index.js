@@ -8,10 +8,11 @@ btn.addEventListener("click",function(){
     //limpia el input para dar la respuesta con mayor claridad. 
     document.getElementById("cardnumber").value = "";
     const numOculto=validator.maskify(numeroTarjeta)
-    document.getElementById("result").innerHTML = (resultado);
+    document.getElementById("result").innerHTML = ('Número de tarjeta válido');
     document.getElementById("hiddenNumber").innerHTML = (numOculto);
   } else {
-    document.getElementById("result").innerHTML = (resultado);
+    document.getElementById("cardnumber").value = "";
+    document.getElementById("result").innerHTML = ('Número de tarjeta inválido, intenta de nuevo');
   }
 });
 
